@@ -25,9 +25,9 @@
             <img src="img/googlelogo_light_color.png" alt="Google Logo">
         </div>
         <div class="search">
-            <div class="input-container">
+            <div class="input-container" id="input-container" onclick="document.getElementById('input-container').style.height = '43px'">
                 <img src="img/search.svg" alt="" class="img">
-                <input type="text" class="input" >
+                <input type="text" class="input" id="input" onclick="document.getElementById('input').style.height = '43px'">
             </div>
             <div class="buttons">
                 <button class="button">Pesquisa Google</button>
@@ -42,10 +42,12 @@
         </div>
         <!-- <hr class="border"> -->
         <div class="footer2">
-            <a class="text-footer" href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a>
-            <a class="text-footer" href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000105-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
-            <a class="text-footer" href="https://smallbusiness.withgoogle.com/intl/pt-BR_br/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=BR#!/">Negócios</a>
-            <a class="text-footer" href="https://www.google.com/search/howsearchworks/?fg=1">Como Funciona a Pesquisa</a>
+            <div class="outside-footer">
+                <a class="text-footer" href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a>
+                <a class="text-footer" href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000105-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
+                <a class="text-footer" href="https://smallbusiness.withgoogle.com/intl/pt-BR_br/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=BR#!/">Negócios</a>
+                <a class="text-footer" href="https://www.google.com/search/howsearchworks/?fg=1">Como Funciona a Pesquisa</a>
+            </div>
             <div class="inside-footer">
                 <a class="text-footer" href="https://policies.google.com/privacy?hl=pt-BR&fg=1">Privacidade</a>
                 <a class="text-footer" href="https://policies.google.com/terms?hl=pt-BR&fg=1">Termos</a>
