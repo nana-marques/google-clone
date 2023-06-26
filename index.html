@@ -14,7 +14,7 @@
         <nav>
             <div class="icons">
                 <a href="" class="icon"><i class="uil uil-user-circle"></i></a>
-                <a href="" class="icon"><i class="uil uil-elipsis-double-v-alt"></i></a>
+                <a href="" class="icon"><i class="uil uil-elipsis-double-v-alt"></i><i class="uil uil-ellipsis-v" style="margin-left:-0.7rem;"></i></a>
             </div>
             <a class="text" href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Imagens</a>
             <a class="text" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
@@ -30,7 +30,7 @@
                 <input type="text" class="input" id="input" onclick="document.getElementById('input').style.height = '43px'">
             </div>
             <div class="buttons">
-                <button class="button">Pesquisa Google</button>
+                <button class="button" id="searching" type="submit">Pesquisa Google</button>
                 <button class="button">Estou com sorte</button>
             </div>
         </div>
@@ -55,4 +55,19 @@
         </div>
     </div>
 </body>
+<script>
+
+    const url = "https://www.google.com.br/search?q=";
+    const search = document.querySelector(".input");
+    const searchBtn = document.querySelector("#searching");
+
+    function googleSearch(query){
+        window.open(url + query);
+    }
+
+    searchBtn.addEventListener("click", ()=>{
+        googleSearch(search.value);
+    })
+
+</script>
 </html>
